@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 50%;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.div1{
+    background-color: #6fe2cc;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+}
+.div2{
+    background-color: rgb(54,72,95);
+    width: 100%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.img-div{
+    height: 200px;
+    width: 80%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    object-fit: contain;  
+    width: 80%;
+    height: 300px; 
+}
+.form{
+    width: 80%;
+    height: 70%;
+    /* background-color: #38e07e; */
+}
+.form >form> p{
+    color: white;
+    
+}
+.text-inputs{
+    width: 100%;
+    height: 40px;
+    margin: 1rem 0 1rem 0;
+    border-style: none;
+    background: none;
+    caret-color: white;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    border-bottom:1px solid;
+
+}
+label{
+    color: #777;
+    font-size: .9rem;
+}
+span>a{
+    color: white;
+}
+span>a:hover{
+    text-decoration: underline;
+    text-decoration-color: #6fe2cc;
+}
+.button{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: #6fe2cc;
+    color: white;
+    font-size: .9rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px  rgba(0, 0, 0, 0.75);
+}
+.button:hover{
+    opacity: .7;
+}
+.signup{
+    display: flex;
+    margin-top: 2.5rem;
+    align-items: center;
+    gap: 1rem;
+}
+.signup>p>a{
+    color: #777;
+    text-decoration: underline;
+    text-decoration-color: #6fe2cc;
+}
+@media (max-width: 768px) {
+    .div2{
+    background-color: rgb(54,72,95);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;}
+    .div1{
+        display: none;
+    }
+    .main{
+        width: 90%;
+        display: block;
+    }
+}
